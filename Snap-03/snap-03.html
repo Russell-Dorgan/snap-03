@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>MG to Grams Weight Converter</title>
+<body>
+
+<h2>Weight Converter</h2>
+<p>Type a value in the MG field to convert the value to Grams:</p>
+
+<p>
+	<label>MG</label>
+	<input id="inputMG" type="number" placeholder="MG" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Grams: <span id="outputGrams"></span></p>
+
+<script>
+	function weightConverter(valNum) {
+		document.getElementById("outputGrams").innerHTML=valNum/1000;
+	}
+</script>
+
+</body>
+</html>
